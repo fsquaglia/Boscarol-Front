@@ -1,5 +1,6 @@
 import React from "react";
 import { useEffect } from "react";
+import { Link, NavLink } from "react-router-dom";
 import LogoBoscarol from "../../assets/BoscarolHnos.png";
 import styles from "./Navbar.module.css";
 
@@ -35,14 +36,19 @@ function Navbar() {
           <span className="navbar-toggler-icon"></span>
         </button>
         <div className="collapse navbar-collapse" id="navbar-toggler">
-          <a className="navbar-brand" href="#">
+          <NavLink to="/" className="navbar-brand">
             <img src={LogoBoscarol} alt="Logo Boscarol Hnos" />
-          </a>
+          </NavLink>
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
-              <a className="nav-link active" aria-current="page" href="#">
+              <NavLink
+                to="/"
+                className="nav-link"
+                activeClassName="active"
+                aria-current="page"
+              >
                 Home
-              </a>
+              </NavLink>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="#">
@@ -64,32 +70,17 @@ function Navbar() {
                 Contacto
               </a>
             </li>
-            {/* <li className="nav-item">
-              <a className="nav-link disabled" aria-disabled="true">
-                Disabled
-              </a>
-            </li> */}
           </ul>
-          {/* <form className="d-flex" role="search">
-            <input
-              className="form-control me-2"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-            />
-            <button className="btn btn-outline-success" type="submit">
-              Search
-            </button>
-          </form> */}
+
           <div className="ml-auto navbar-dark">
-            <a className="nav-link" href="#">
+            <NavLink to="/login" className="nav-link">
               <i
                 className={`bi bi-person-fill ${styles.icon}`}
                 data-bs-toggle="tooltip"
                 data-bs-placement="left"
                 data-bs-title="Administrador"
               ></i>
-            </a>
+            </NavLink>
           </div>
         </div>
       </div>
