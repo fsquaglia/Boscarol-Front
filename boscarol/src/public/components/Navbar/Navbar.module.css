@@ -1,0 +1,23 @@
+.icon {
+  margin: 0 10px 0 0;
+  font-size: 1.5rem;
+  color: white;
+}
+
+.fixedNavbar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Ajusta el último valor para controlar la opacidad */
+  z-index: 100;
+}
+
+ul {
+  font-weight: bold;
+}
