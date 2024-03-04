@@ -7,19 +7,19 @@ function Carousel() {
   return (
     <div
       id="carouselExampleSlidesOnly"
-      className="carousel slide carousel-fade"
+      className="carousel-fade slide"
       data-bs-ride="carousel"
       data-bs-interval="1500"
       data-bs-pause="false"
     >
-      <div className="carousel-inner carousel-fade">
-        <div className="carousel-item active">
+      <div className="carousel-fade">
+        <div className="carousel-item carousel-fade active">
           <img src={img01} className="d-block w-100 carousel-fade" alt="..." />
         </div>
-        <div className="carousel-item">
+        <div className="carousel-item carousel-fade">
           <img src={img02} className="d-block w-100 carousel-fade" alt="..." />
         </div>
-        <div className="carousel-item">
+        <div className="carousel-item carousel-fade">
           <img src={img03} className="d-block w-100 carousel-fade" alt="..." />
         </div>
       </div>
