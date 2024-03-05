@@ -16,17 +16,11 @@ function Home() {
           <div className={styles.overlay}></div>
         </div>
       </div>
-      <div className=" container-fluid justify-content-center align-items-center">
-        <div
-          className="row"
-          style={{
-            maxHeight: "300px",
-            maxWidth: "auto",
-            background: "#e1dede",
-          }}
-        >
-          <Carousel />
-        </div>
+      <div
+        className={styles.row}
+
+      >
+        <Carousel />
       </div>
     </>
   );

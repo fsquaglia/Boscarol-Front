@@ -37,10 +37,25 @@
   0% {
     transform: scale(1.1);
   }
+
   50% {
     transform: scale(1.2);
   }
+
   100% {
     transform: scale(1.1);
   }
+}
+
+.row {
+  background-color: #e1dede;
+  height: 30em;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 0em;
+  margin-left: 0em;
+
 }
