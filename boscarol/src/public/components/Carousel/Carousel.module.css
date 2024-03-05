@@ -1,0 +1,36 @@
+/* Carousel.module.css */
+
+.continuousCarousel {
+  overflow: hidden;
+}
+
+.carousel-inner {
+  display: flex;
+  transition: transform 1s ease;
+  /* Ajusta la duración según sea necesario */
+}
+
+.carousel-item {
+  width: 50%;
+  flex: 0 0 auto;
+}
+
+
+.bigDiv {
+  height: 23em;
+  width: 20em;
+  overflow: hidden;
+
+
+}
+
+
+
+.items {
+  width: 20em;
+}
+
+.images {
+  height: 20em;
+  width: auto;
+}
